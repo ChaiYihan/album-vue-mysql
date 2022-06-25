@@ -1,8 +1,11 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div style="border-width: 2px; border-color: blueviolet; border-style: solid;">
+    <div class="home"> -->
+      <img alt="Vue logo" src="../assets/logo.png">
+      <HelloWorld msg="Welcome to Your Vue.js App" />
+    </div>
   </div>
+
 </template>
 
 <script>
