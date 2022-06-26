@@ -11,6 +11,9 @@ module.exports = defineConfig({
   transpileDependencies: true,
   devServer: {
     port: 8090,
+	  client: {
+		  webSocketURL: 'ws://0.0.0.0:8090/ws',
+	}
   },
   chainWebpack: (config) => {
     config.resolve.alias

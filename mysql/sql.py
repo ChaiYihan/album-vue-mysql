@@ -2,7 +2,7 @@ import pymysql
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 
-db = pymysql.connect(host='127.0.0.1', user="root", passwd="white514", db="album")
+db = pymysql.connect(host='127.0.0.1', user="root", passwd="white514=", db="album")
 cursor = db.cursor()
 
 app = Flask(__name__)

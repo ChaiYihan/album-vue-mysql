@@ -61,7 +61,7 @@ export default {
             ;
         // console.log(this.cataStyle);
 
-        const url = 'http://127.0.0.1:8091/thumb/list';
+        const url = 'http://158.247.238.83:8091/thumb/list';
         const resp = fetch(url, {
             method: 'POST',
             mode: 'cors',
@@ -75,7 +75,7 @@ export default {
             return img;
         },
         choosePic: function(fid){
-            const url = 'http://127.0.0.1:8091/detail/get';
+            const url = 'http://158.247.238.83:8091/detail/get';
             var data = {
                 "fid" : fid,
             };
