@@ -1,0 +1,41 @@
+nohup: ignoring input
+ * Serving Flask app 'sql' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:8091
+ * Running on http://158.247.238.83:8091 (Press CTRL+C to quit)
+158.247.238.83 - - [26/Jun/2022 01:09:16] "POST /thumb/list HTTP/1.1" 200 -
+158.247.238.83 - - [26/Jun/2022 01:09:19] "OPTIONS /detail/get HTTP/1.1" 200 -
+158.247.238.83 - - [26/Jun/2022 01:09:19] "POST /detail/get HTTP/1.1" 200 -
+158.247.238.83 - - [26/Jun/2022 01:09:22] "OPTIONS /detail/get HTTP/1.1" 200 -
+158.247.238.83 - - [26/Jun/2022 01:09:22] "POST /detail/get HTTP/1.1" 200 -
+158.247.238.83 - - [26/Jun/2022 01:15:35] "POST /thumb/list HTTP/1.1" 200 -
+158.247.238.83 - - [26/Jun/2022 01:15:37] "OPTIONS /detail/get HTTP/1.1" 200 -
+158.247.238.83 - - [26/Jun/2022 01:15:37] "POST /detail/get HTTP/1.1" 200 -
+158.247.238.83 - - [26/Jun/2022 01:17:37] "POST /thumb/list HTTP/1.1" 200 -
+158.247.238.83 - - [26/Jun/2022 01:18:35] "OPTIONS /detail/get HTTP/1.1" 200 -
+158.247.238.83 - - [26/Jun/2022 01:18:36] "POST /detail/get HTTP/1.1" 200 -
+158.247.238.83 - - [26/Jun/2022 01:18:36] "OPTIONS /detail/get HTTP/1.1" 200 -
+158.247.238.83 - - [26/Jun/2022 01:18:36] "POST /detail/get HTTP/1.1" 200 -
+158.247.238.83 - - [26/Jun/2022 01:18:39] "POST /thumb/list HTTP/1.1" 200 -
+158.247.238.83 - - [26/Jun/2022 01:18:43] "OPTIONS /detail/get HTTP/1.1" 200 -
+158.247.238.83 - - [26/Jun/2022 01:18:44] "POST /detail/get HTTP/1.1" 200 -
+158.247.238.83 - - [26/Jun/2022 01:18:45] "OPTIONS /detail/get HTTP/1.1" 200 -
+158.247.238.83 - - [26/Jun/2022 01:18:46] "POST /detail/get HTTP/1.1" 200 -
+158.247.238.83 - - [26/Jun/2022 01:20:12] "POST /thumb/list HTTP/1.1" 200 -
+158.247.238.83 - - [26/Jun/2022 01:20:15] "OPTIONS /detail/get HTTP/1.1" 200 -
+158.247.238.83 - - [26/Jun/2022 01:20:15] "POST /detail/get HTTP/1.1" 200 -
+158.247.238.83 - - [26/Jun/2022 01:20:16] "OPTIONS /detail/get HTTP/1.1" 200 -
+158.247.238.83 - - [26/Jun/2022 01:20:16] "POST /detail/get HTTP/1.1" 200 -
+158.247.238.83 - - [26/Jun/2022 01:20:16] "OPTIONS /detail/get HTTP/1.1" 200 -
+158.247.238.83 - - [26/Jun/2022 01:20:17] "POST /detail/get HTTP/1.1" 200 -
+158.247.238.83 - - [26/Jun/2022 01:24:34] "POST /thumb/list HTTP/1.1" 200 -
+127.0.0.1 - - [26/Jun/2022 01:30:16] "GET /thumb/list HTTP/1.0" 405 -
+127.0.0.1 - - [26/Jun/2022 01:30:17] "GET /favicon.ico HTTP/1.0" 404 -
+127.0.0.1 - - [26/Jun/2022 01:30:50] "POST /thumb/list HTTP/1.0" 200 -
+127.0.0.1 - - [26/Jun/2022 01:30:53] "OPTIONS /detail/get HTTP/1.0" 200 -
+127.0.0.1 - - [26/Jun/2022 01:30:53] "POST /detail/get HTTP/1.0" 200 -

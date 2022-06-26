@@ -61,7 +61,7 @@ export default {
             ;
         // console.log(this.cataStyle);
 
-        const url = 'http://158.247.238.83:8091/thumb/list';
+        const url = 'http://db.koishi-cyh.com/thumb/list';
         const resp = fetch(url, {
             method: 'POST',
             mode: 'cors',
@@ -75,7 +75,7 @@ export default {
             return img;
         },
         choosePic: function(fid){
-            const url = 'http://158.247.238.83:8091/detail/get';
+            const url = 'http://db.koishi-cyh.com/detail/get';
             var data = {
                 "fid" : fid,
             };
