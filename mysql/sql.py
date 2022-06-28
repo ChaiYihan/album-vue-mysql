@@ -27,6 +27,26 @@ def thumb_list():
             print('resulst: NULL')
         return jsonify(res)
 
+@app.route('/thumb/list', methods=['GET'])
+def thumb_list_get():
+    if request.method == 'GET':
+        # username = request.form.get('username')
+        cursor.execute('SELECT id,name,ctime FROM first_album')
+        data = cursor.fetchall()
+        res = []
+        temp = {}
+        if data!=None:
+            for i in data:
+                temp['id']=i[0]
+                temp['name']=i[1]
+                temp['ctime']=i[2]
+                res.append(temp.copy())
+            print('result: ', len(data))
+        else:
+            print('resulst: NULL')
+        return jsonify(res)
+
+
 @app.route('/detail/get', methods=['POST'])
 def detail_get():
     if request.method == 'POST':
