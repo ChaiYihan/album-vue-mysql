@@ -1,6 +1,6 @@
 <template>
-<div style="height: 50vh; width: 77.5vw">
-    <img :src="disSrc" alt="Display" :style="disStyle" />
+<div :style="divStyle">
+    <img :src="disSrc" alt="Display" :style="disStyle" @load="loadImage" />
 </div>
 
 </template>
@@ -20,6 +20,7 @@ export default{
         return {
             // disSrc : '',
             disStyle : '',
+			divStyle: '',
         }
     },
     created(){
@@ -30,7 +31,16 @@ export default{
             // +'top: '+availH*0.1+'px; '
             // +'left: '+(availW*0.4-show.clientWidth*0.5)+'px; '
             ;
+		this.divStyle = ''
+			+'height: '+availH*0.5+'px; '
+			+'width: '+availW*0.775+'px; '
+			;
     },
+	methods:{
+		loadImage: function(){
+			this.$store.dispatch('setIsLoading', false);
+		},
+	},
 }
 </script>
 

@@ -2,7 +2,7 @@ import pymysql
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 
-db = pymysql.connect(host='127.0.0.1', user="root", passwd="white514", db="album")
+db = pymysql.connect(host='127.0.0.1', user="root", passwd="white514=", db="album")
 cursor = db.cursor()
 
 app = Flask(__name__)
@@ -26,6 +26,26 @@ def thumb_list():
         else:
             print('resulst: NULL')
         return jsonify(res)
+
+@app.route('/thumb/list', methods=['GET'])
+def thumb_list_get():
+    if request.method == 'GET':
+        # username = request.form.get('username')
+        cursor.execute('SELECT id,name,ctime FROM first_album')
+        data = cursor.fetchall()
+        res = []
+        temp = {}
+        if data!=None:
+            for i in data:
+                temp['id']=i[0]
+                temp['name']=i[1]
+                temp['ctime']=i[2]
+                res.append(temp.copy())
+            print('result: ', len(data))
+        else:
+            print('resulst: NULL')
+        return jsonify(res)
+
 
 @app.route('/detail/get', methods=['POST'])
 def detail_get():
