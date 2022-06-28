@@ -6,15 +6,23 @@
 </template>
 
 <script>
-// export default{
-//     name: 'Header',
-//     // el: "#app",
-//     data: {
-//         return: {
-//             classObj: { Head:true, },
-//         }
-//     }
-// }
+
+import { mapState } from 'vuex';
+
+var availH = screen.availHeight - (window.outerHeight - window.innerHeight);
+var availW = screen.availWidth - (window.outerWidth - window.innerWidth);
+
+export default{
+    computed: {
+        ...mapState(['isLoading'])
+    },
+    name: 'Header',
+    data: {
+        return: {
+            classObj: { Head:true, },
+        }
+    }
+}
 </script>
 
 
