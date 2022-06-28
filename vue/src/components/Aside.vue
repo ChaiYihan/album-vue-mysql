@@ -1,7 +1,9 @@
 <template>
     <div :style="albumStyle">
         <div :style="cataStyle">
-            <img v-for="pic in this.albumList" :src="getSrc(pic['name'])" :style="picStyle" v-on:click="choosePic(pic['id'])" />
+			<div class="divPic" v-for=" pic in this.albumList" :style="divPicStyle" v-on:click="choosePic(pic['id'])">
+	            <img class="pic"  :src="getSrc(pic['name'])" :style="picStyle" />
+			</div>
         </div>
     </div>
 </template>
@@ -30,6 +32,7 @@ export default {
             albumStyle: '',
             cataStyle: '',
             picStyle: '',
+			divPicStyle: '',
             albumList: [],
             // disSrc: '',
         };
@@ -57,16 +60,25 @@ export default {
             ;
         this.picStyle = ''
             + 'height: ' + availH * 0.06 + 'px; '
-            + 'margin: 0 5px 0 0; '
+            + 'margin: 3px ; '
+//			+ 'border-width: 5px; '
+//			+ 'border-style: solid; '
+//			+ 'border-color: transparent; '
             ;
+		this.divPicStyle = ''
+			+ 'display: inline-block; '
+		//	+ 'height: ' + availH*0.07+'px; '
+			;
         // console.log(this.cataStyle);
 
-        const url = 'http://127.0.0.1:8091/thumb/list';
+		this.$store.dispatch('setIsLoading', true);		
+        const url = 'http://db.koishi-cyh.com/thumb/list';
         const resp = fetch(url, {
             method: 'POST',
             mode: 'cors',
         }).then(resp => resp.json()).then(data => {
             this.albumList = data;
+			this.$store.dispatch('setIsLoading', false);
         })
     },
     methods: {
@@ -75,10 +87,11 @@ export default {
             return img;
         },
         choosePic: function(fid){
-            const url = 'http://127.0.0.1:8091/detail/get';
+            const url = 'http://db.koishi-cyh.com/detail/get';
             var data = {
                 "fid" : fid,
             };
+			this.$store.dispatch('setIsLoading', true);
             // console.log(JSON.stringify(data));
             fetch(url, {
                 body: JSON.stringify({'fid':fid}), // must match 'Content-Type' header
@@ -96,6 +109,7 @@ export default {
                 // console.log(data[0]['name']);
                 const img = require(`@/assets/img/pictures/${data[0]['name']}`);
                 this.$store.dispatch('setDisSrc', img);
+				//this.$store.dispatch('setIsLoading', false);
             })
         },
     },
@@ -125,6 +139,10 @@ div::-webkit-scrollbar-thumb {
 
 div::-webkit-scrollbar-thumb:hover {
     background-image: url('@/assets/img/background/scrollbar-thumb-hover.png');
+}
+
+.divPic:hover{
+	background-color: green;
 }
 
 </style>

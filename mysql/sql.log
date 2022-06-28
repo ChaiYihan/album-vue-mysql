@@ -1,0 +1,42 @@
+nohup: ignoring input
+ * Serving Flask app 'sql' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:8091
+ * Running on http://158.247.238.83:8091 (Press CTRL+C to quit)
+127.0.0.1 - - [28/Jun/2022 03:12:08] "POST /thumb/list HTTP/1.0" 200 -
+127.0.0.1 - - [28/Jun/2022 03:12:12] "POST /thumb/list HTTP/1.0" 200 -
+127.0.0.1 - - [28/Jun/2022 03:12:14] "OPTIONS /detail/get HTTP/1.0" 200 -
+127.0.0.1 - - [28/Jun/2022 03:12:14] "POST /detail/get HTTP/1.0" 200 -
+127.0.0.1 - - [28/Jun/2022 03:12:15] "OPTIONS /detail/get HTTP/1.0" 200 -
+127.0.0.1 - - [28/Jun/2022 03:12:16] "POST /detail/get HTTP/1.0" 200 -
+127.0.0.1 - - [28/Jun/2022 03:12:18] "OPTIONS /detail/get HTTP/1.0" 200 -
+127.0.0.1 - - [28/Jun/2022 03:12:19] "POST /detail/get HTTP/1.0" 200 -
+127.0.0.1 - - [28/Jun/2022 03:12:20] "OPTIONS /detail/get HTTP/1.0" 200 -
+127.0.0.1 - - [28/Jun/2022 03:12:20] "POST /detail/get HTTP/1.0" 200 -
+127.0.0.1 - - [28/Jun/2022 03:12:22] "OPTIONS /detail/get HTTP/1.0" 200 -
+127.0.0.1 - - [28/Jun/2022 03:12:22] "POST /detail/get HTTP/1.0" 200 -
+127.0.0.1 - - [28/Jun/2022 03:31:02] "POST /thumb/list HTTP/1.0" 200 -
+127.0.0.1 - - [28/Jun/2022 03:37:04] "POST /thumb/list HTTP/1.0" 200 -
+127.0.0.1 - - [28/Jun/2022 03:37:06] "OPTIONS /detail/get HTTP/1.0" 200 -
+127.0.0.1 - - [28/Jun/2022 03:37:06] "POST /detail/get HTTP/1.0" 200 -
+127.0.0.1 - - [28/Jun/2022 03:37:07] "OPTIONS /detail/get HTTP/1.0" 200 -
+127.0.0.1 - - [28/Jun/2022 03:37:07] "POST /detail/get HTTP/1.0" 200 -
+127.0.0.1 - - [28/Jun/2022 03:37:08] "OPTIONS /detail/get HTTP/1.0" 200 -
+127.0.0.1 - - [28/Jun/2022 03:37:08] "POST /detail/get HTTP/1.0" 200 -
+127.0.0.1 - - [28/Jun/2022 03:37:08] "OPTIONS /detail/get HTTP/1.0" 200 -
+127.0.0.1 - - [28/Jun/2022 03:37:09] "POST /detail/get HTTP/1.0" 200 -
+127.0.0.1 - - [28/Jun/2022 03:37:09] "OPTIONS /detail/get HTTP/1.0" 200 -
+127.0.0.1 - - [28/Jun/2022 03:37:09] "POST /detail/get HTTP/1.0" 200 -
+127.0.0.1 - - [28/Jun/2022 03:37:09] "OPTIONS /detail/get HTTP/1.0" 200 -
+127.0.0.1 - - [28/Jun/2022 03:37:09] "POST /detail/get HTTP/1.0" 200 -
+127.0.0.1 - - [28/Jun/2022 03:37:09] "OPTIONS /detail/get HTTP/1.0" 200 -
+127.0.0.1 - - [28/Jun/2022 03:37:09] "POST /detail/get HTTP/1.0" 200 -
+127.0.0.1 - - [28/Jun/2022 03:37:10] "OPTIONS /detail/get HTTP/1.0" 200 -
+127.0.0.1 - - [28/Jun/2022 03:37:10] "POST /detail/get HTTP/1.0" 200 -
+127.0.0.1 - - [28/Jun/2022 03:37:10] "OPTIONS /detail/get HTTP/1.0" 200 -
+127.0.0.1 - - [28/Jun/2022 03:37:10] "POST /detail/get HTTP/1.0" 200 -
