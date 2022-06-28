@@ -24,7 +24,7 @@ var posDis = availW * 0.225;
 
 export default {
     computed:{
-        ...mapState(['disSrc'])
+        ...mapState(['disSrc', 'albumurl', 'dburl'])
     },
     name: 'Aside',
     data() {
@@ -72,7 +72,7 @@ export default {
         // console.log(this.cataStyle);
 
 		this.$store.dispatch('setIsLoading', true);		
-        const url = 'http://db.koishi-cyh.com/thumb/list';
+        const url = this.dburl+'/thumb/list';
         const resp = fetch(url, {
             method: 'POST',
             mode: 'cors',
@@ -87,7 +87,7 @@ export default {
             return img;
         },
         choosePic: function(fid){
-            const url = 'http://db.koishi-cyh.com/detail/get';
+            const url = this.dburl+'/detail/get';
             var data = {
                 "fid" : fid,
             };
